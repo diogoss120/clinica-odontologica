@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*inicio do header*/
+
+
+.logo img{
+    width: 230px;
+}
+
+header > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+    position :relative;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.icone-mobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagens/menu-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+header ul a{
+    color: #b4b4b4;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+header .menu-mobile a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+header .menu-desktop a:hover{
+    color: #738896;
+    font-weight: bold;
+}
+
+.mobile{
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5%;
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: 1;
+    width: 100%;
+    background: #688293;
+}
+
+.menu-mobile ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content:  space-between;
+    height: 140px;
+    padding: 3px 0;
+}
+
+.menu-mobile a{
+    color: white;
+}
+
+/*fim do header*/
+
+
+
+/*inicio do mosaico e section1*/
+.section1 > .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section1 .bloco{
+    width: calc(100% / 6);
+    min-width: 190px;
+    max-width: 233.333px;
+}
+
+.section1 .bloco .img{
+    width: 100%;
+    padding-top: 100%;
+    background-color: rgb(204, 199, 199);
+    border: 5px solid white;
+}
+/*fim da section1*/
+
+
+
+/*inicio da section2*/
+.section2 > .container{
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .destaque{
+    position: relative;
+    top: -30px;
+    width: 30%;
+    color: white;
+    text-align: center;
+    background-color: #576975;
+    padding: 26px 2%;
+    background-image: url('../imagens/icone_dente.png');
+    background-size: 15px;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+}
+
+.section2 .destaque:nth-of-type(2){
+    width: 40%; /*alterei a largura da div mae Container e coloquei a largura do flex-item baseada na nova largura da mae*/
+    background-color: #688293;
+    padding: 48px 2%; /*usando o padding para criar a ALTURA*/
+    background-image: none;
+}
+
+.section2 .destaque h3{
+    font-weight: normal;
+    margin-top: 10px;
+}
+.section2 .destaque p{
+    font-weight: normal;
+    font-size: 12px;
+    margin: 7px 0 20px 0;
+}
+/*fim da section2*/
+
+/*Inicio section3*/
+.section3{
+    padding-top: 40px;
+}
+.section3 > .container{
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dentista{
+    width: 40%;
+    min-width: 320px;
+}
+
+.section3 > .container .img{
+    width: 95%;
+    padding-top: 130%;
+    background-image: url('../imagens/img_perfil.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ .texto{
+    width: 58%;
+    padding: 3% 2%;
+    text-align: justify;
+}
+
+ .texto h3{
+     color: #698293;
+     font-size: 18px;
+ }
+
+ .texto p{
+     margin: 14px 0;
+     line-height: 25px;
+ }
+/*fim da section*/
+
+
+/*inicio da sectio4*/
+
+
+.section4 > .container{
+    max-width: 1200px;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container > iframe{
+    width: 48%;
+    height: 310px;
+}
+/*fim da sectio4*/
+
+
+
+
+
+/*inicio da section5*/
+
+.section5{
+    padding-top: 50px;
+}
+
+.section5 > h2 {
+    text-align: center;
+    color: #698293;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+
+.section5 > .tratamentos{
+    padding-top: 40px;
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.tratamentos .item{
+    width: calc((100% / 3) - 30px);
+    margin: 15px 0;
+}
+.tratamentos .item h2{
+    color: #727272;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.tratamentos .item p{
+    text-align: justify;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+/*fim da section5*/
+
+/*inicio da section6*/
+.section6{
+    padding: 90px 0; 
+}
+
+.depoimento{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.depoimento h3{
+    font-weight: normal;
+    margin: 30px 0 20px 0;
+    color: #698293;
+}
+
+.depoimento p{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+.depoimento .pessoa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b4b4b4;
+    font-size: 14px;
+}
+
+.depoimento .pessoa img{
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 15px;
+}
+/*fim da section6*/
+
+/*inicio da section7*/
+
+.section7{
+    padding: 30px 0;
+    background-color: #98a5ae;
+}
+
+.section7 .container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section7 .container p:first-of-type{
+    margin-top: 15px;
+}
+
+.section7 .container p:last-of-type{
+    font-size: 11px;
+}
+/*fim da section7*/
+
+
+
+/*inicio da section8*/
+.section8{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section8 img{
+    width: calc((100% /6) - 24px);
+    border: 2px solid white;
+}
+/*fim da section8*/
+
+
+/*inicio da section9*/
+.section9{
+    background-color: #576975;
+    padding: 30px 0; 
+}
+
+.section9 > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section9 .container p:first-of-type{
+    margin-top: 15px;
+}
+
+.section9 .container p:last-of-type{
+    font-size: 11px;
+}
+/*fim da section9*/
+
+
+/*inicio da section10*/
+
+.section10{
+    padding: 50px 0;
+}
+
+.section10 .container > h2{
+    margin: 20px 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    color: #698293;
+}
+
+.section10 form{
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.section10 form input[type=text]{
+    width: 100%;
+    margin: 4px 0 10px 0;
+    outline: none;
+    outline-width: 1px;
+    outline-color: red;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #bec7ce;
+    padding-left: 6px;
+}
+
+.section10 form .metade{
+    display: flex;
+    justify-content: space-between;
+}
+.section10 form .metade .item{
+    width: 48%;
+}
+
+.section10 form textarea{
+    resize: none;
+    outline: none;
+    outline-width: 1px;
+    outline-color: red;
+    width: 100%;
+    margin: 4px 0 10px 0;
+    border: 1px solid #bec7ce;
+    padding: 6px 0 0 6px;
+}
+
+.section10 form input[type=button]{
+    color: white;
+    background: #688293;
+    outline: none;
+    border: 0;
+    padding-left: 6px;
+    height: 35px;
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*finalizando a section10*/
+
+
+/*inicioando o footer*/
+footer{
+    background: rgb(104, 130, 147);
+    padding: 40px 0
+}
+
+footer > .container{
+    padding: 0 2%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .container div h2{
+    font-weight: normal;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer > .container p{
+    color: white;
+}
+/*encerrando o footer*/
+
+
+
+
+@media(max-width: 1170px){
+    header .container{
+        padding: 28px 0 28px 5% ;
+    }
+    .section8 img{
+        width: calc((100% /3) - 12px);
+        border: 2px solid white;
+    }
+
+    .section8 img:nth-of-type(4), .section8 img:nth-of-type(5), .section8 img:nth-of-type(6){
+        display: none;
+    }
+}
+
+@media (max-width: 833px){
+    .dentista{
+        width: 46%;
+    }
+    .texto{
+        margin-top: 15px;
+        width: 90%;
+        padding: 5%;
+    }
+
+    .section3 > .container{
+        justify-content: center;
+    }
+
+    .section3 > .container .img{
+        margin: 0 auto;
+    }
+
+    .section4 > .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container > iframe{
+        margin-top: 20px;
+        width: 80%;
+        height: 366px;
+    }
+
+    .tratamentos{
+        padding: 0 10px;
+    }
+
+    .tratamentos .item{
+        width: calc((100% / 2) - 20px);
+        margin: 15px 0;
+    }
+    
+    .tratamentos .item p{
+        text-align: justify;
+    }
+
+    .tratamentos .item:last-of-type{
+        display: none;
+    }
+
+    .depoimento{
+        width: 90%;
+    }
+
+    .depoimento p{
+        width: 96%;
+    }
+
+}
+
+@media (max-width: 780px){
+    .dentista{
+        width: 55%;
+    }
+    .mobile{
+        display: inline-block;
+    }
+
+    .icone-mobile{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+        
+    .section8 img{
+        width: calc((100% / 2) - 8px);
+    }
+
+    .section8 img:first-of-type{
+        display: none;
+    }
+
+    .section10 form{
+        padding: 0 2%;
+    }
+
+    .section10 form .metade{
+        flex-direction: column;
+    }
+
+    .section10 form .metade .item{
+        width: 100%;
+    }
+
+    footer > .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > .container div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    .dentista{
+        width: 70%;
+    }
+    .section2 > .container{
+        flex-direction: column;
+    }
+
+    .section2 .destaque{
+        width: 78%;
+    }
+
+    .section2 .destaque:nth-of-type(2){
+        width: 85%;
+    }
+
+    .container > iframe{
+        width: 90%;
+        height: 230px;
+    }
+
+}
